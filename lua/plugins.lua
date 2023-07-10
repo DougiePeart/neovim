@@ -235,8 +235,8 @@
           -- end of git related plugins
           -- which key is it?
           {
-           "folke/which-key.nvim",
-           event = "VeryLazy",
+           'folke/which-key.nvim',
+           event = 'VeryLazy',
            init = function()
              vim.o.timeout = true
              vim.o.timeoutlen = 300
@@ -246,8 +246,18 @@
              -- or leave it empty to use the default settings
              -- refer to the configuration section below
            }
-         }
+         },
           -- Oh that's what key it is!
+          -- vim surround
+          {'tpope/vim-surround'},
+          -- end of vim surround
+          -- Auto pais
+          {
+           'windwp/nvim-autopairs',
+           event = "InsertEnter",
+           opts = {} -- this is equalent to setup({}) function
+        },
+          -- end of auto pairs
         }
       }
     })

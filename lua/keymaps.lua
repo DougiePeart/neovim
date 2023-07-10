@@ -15,6 +15,8 @@ vim.keymap.set('n', '<leader>gP', ':Git push<CR>', { desc = '[G]it [P]ush' })
 -- Files
 vim.keymap.set('n', '<leader>ff', require('telescope.builtin').find_files, { desc = '[F]ile [F]ind' })
 vim.keymap.set('n', '<leader>fg', require('telescope.builtin').live_grep, { desc = '[F]ile [G]rep' })
+-- Buffers
+vim.keymap.set('n', '<leader>bs', require('telescope.builtin').buffers, { desc = '[B]uffer [S]witch' })
 -- Search
 vim.keymap.set('n', '<leader>sh', require('telescope.builtin').help_tags, { desc = '[S]earch [H]elp' })
 vim.keymap.set('n', '<leader>sw', require('telescope.builtin').grep_string, { desc = '[S]earch current [W]ord' })
